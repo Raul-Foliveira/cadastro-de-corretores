@@ -1,0 +1,175 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+}
+form {
+    margin-bottom: 50px;
+}
+h1 {
+    font-size: 2.1rem;
+}
+
+input {
+    width: 8%; 
+    padding: 9px; 
+    margin: 5px 0; 
+    border: 1px solid #ccc;
+    border-radius: 5px; 
+    font-size: 16px; 
+}
+
+.mensagem {
+    width: 20%;
+    margin: 20px auto; 
+    padding: 15px;
+    background: #dff0d8; 
+    color: #3c763d;
+    border: 1px solid #d6e9c6;
+    border-radius: 5px;
+    font-weight: bold;
+    text-align: center;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.mensagem.erro {
+    background: #f8d7da; 
+    color: #721c24; 
+    border: 1px solid #f5c6cb;
+}
+
+table {
+    width: 40%;
+    border-collapse: collapse;
+    margin: 20px auto; 
+    background: white;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.2); 
+    border-radius: 8px; 
+    overflow: hidden; 
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th {
+    background: #333;
+    color: white;
+    padding: 10px;
+}
+
+td {
+    padding: 8px;
+    text-align: center;
+}
+
+button, .excluir-btn, .editar-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.editar-btn {
+    background: #ffcc00;
+    color: black;
+}
+
+.editar-btn:hover {
+    background: #e6b800;
+}
+
+.excluir-btn {
+    background: #e74c3c;
+    color: white;
+}
+
+.excluir-btn:hover {
+    background: #c0392b;
+}
+
+
+button {
+    background: #333;
+    color: white;
+}
+
+button:hover {
+    background: #555;
+}
+
+.modal-overlay {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); 
+    backdrop-filter: blur(5px); 
+    z-index: 999;
+}
+
+#editModal {
+    display: none;
+    position: fixed;
+    z-index: 1000;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.3); 
+}
+
+#closeModal {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+#editarForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 400px; 
+    margin: auto; 
+}
+
+#editarForm label {
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: left;
+}
+
+#editarForm input {
+    width: 96%;
+    padding: 8px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#editarForm button {
+    display: block; 
+    margin: 10px auto; 
+    width: 30%;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center;
+}
+
+
+#editarForm button:hover {
+    background-color: #555;
+}
+
